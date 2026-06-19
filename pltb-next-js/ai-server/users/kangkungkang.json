@@ -1,0 +1,61 @@
+{
+  "username": "kangkungkang",
+  "email": "nail12@gmail.com",
+  "password": "masukin123",
+  "role": "user",
+  "name": "nailajah69",
+  "active_dataset": "C:\\xampp\\htdocs\\pltb-brin\\ai-server\\uploads\\NASA_Sukabumi_Hourly.csv",
+  "history": [
+    {
+      "entry": {
+        "id": 1780482253340,
+        "waktu": "3/6/2026, 17.24.13",
+        "file": "NASA_Bawean_Hourly.csv",
+        "algo": "General Model",
+        "periode": "1 Jam",
+        "hasil": [
+          {
+            "label": "BiLSTM:",
+            "value": "14.30 MW"
+          }
+        ],
+        "status": "Selesai",
+        "nlp_report": "Prediksi kecepatan angin untuk periode 01-01-2023 hingga 08-01-2023 menunjukkan rata-rata 3.26 m/s, termasuk kategori angin sepoi ringan. Kecepatan tertinggi mencapai 3.56 m/s dan terendah 3.12 m/s, dengan standar deviasi 0.11 m/s. Angin cenderung paling kuat sekitar pukul 14:00 dan paling lemah sekitar pukul 23:00. Secara umum tren angin menurun menuju akhir periode. \n\nModel terbaik adalah XGB dengan MAPE 2.06% dan RMSE 0.07. Tingkat akurasi model tergolong tinggi."
+      }
+    },
+    {
+      "entry": {
+        "id": 1780396228491,
+        "waktu": "2/6/2026, 17.30.28",
+        "file": "NASA_Baron_Hourly.csv",
+        "algo": "XGB-LSTM",
+        "periode": "1 Jam",
+        "hasil": [
+          {
+            "label": "BiLSTM:",
+            "value": "14.30 MW"
+          }
+        ],
+        "status": "Selesai",
+        "nlp_report": "Prediksi kecepatan angin untuk periode 01-01-2023 hingga 08-01-2023 menunjukkan rata-rata 3.22 m/s, termasuk kategori angin sepoi ringan. Kecepatan tertinggi mencapai 7.84 m/s dan terendah 0.86 m/s, dengan standar deviasi 1.35 m/s. Angin cenderung paling kuat sekitar pukul 07:00 dan paling lemah sekitar pukul 12:00. Secara umum tren angin menurun menuju akhir periode. \n\nModel terbaik adalah XGB-LSTM Stacking dengan MAPE 5.50% dan RMSE 0.263. Tingkat akurasi model tergolong tinggi."
+      }
+    },
+    {
+      "entry": {
+        "id": 1780395261611,
+        "waktu": "2/6/2026, 17.14.21",
+        "file": "NASA_Baron_Hourly.csv",
+        "algo": "General Model",
+        "periode": "1 Jam",
+        "hasil": [
+          {
+            "label": "BiLSTM:",
+            "value": "14.30 MW"
+          }
+        ],
+        "status": "Selesai",
+        "nlp_report": "Prediksi kecepatan angin untuk periode 01-01-2023 hingga 08-01-2023 menunjukkan rata-rata 6.77 m/s, termasuk kategori angin segar. Kecepatan tertinggi mencapai 6.85 m/s dan terendah 6.75 m/s, dengan standar deviasi 0.01 m/s. Angin cenderung paling kuat sekitar pukul 12:00 dan paling lemah sekitar pukul 00:00. Secara umum tren angin relatif stabil sepanjang periode. \n\nModel terbaik adalah XGB dengan MAPE 1.95% dan RMSE 0.081. Tingkat akurasi model tergolong tinggi."
+      }
+    }
+  ]
+}
