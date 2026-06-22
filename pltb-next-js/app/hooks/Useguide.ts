@@ -280,6 +280,53 @@ export const EDIT_PROFILE_STEPS: GuideStep[] = [
   },
 ];
 
+// ─── Steps: Overview ───────────────────────────────────────────────────
+export const OVERVIEW_STEPS: GuideStep[] = [
+  {
+    id: 0,
+    icon: "📊",
+    title: "Selamat Datang di Overview!",
+    description:
+      "Halaman ini merangkum hasil generate prediksi energi angin — dari info dataset, laporan NLP, hingga grafik analisis.",
+  },
+  {
+    id: 1,
+    icon: "📋",
+    title: "Info Hasil Generate",
+    description:
+      "Bagian ini menampilkan nama dataset yang dipakai, mode generate yang dipilih, dan tombol download laporan PDF.",
+    target: "overview-header",
+    position: "bottom",
+  },
+  {
+    id: 2,
+    icon: "📰",
+    title: "Laporan NLP",
+    description:
+      "Hasil analisis teks otomatis dari prediksi energi angin — berisi ringkasan kondisi, rekomendasi operasional, dan highlight waspada.",
+    target: "nlp-result",
+    position: "bottom",
+  },
+  {
+    id: 3,
+    icon: "🗂️",
+    title: "Tab Analisis",
+    description:
+      "Pilih tab EDA untuk eksplorasi data, Overfit Check untuk evaluasi model, atau Prediksi vs Aktual untuk melihat grafik hasil prediksi.",
+    target: "analysis-tabs",
+    position: "bottom",
+  },
+  {
+    id: 4,
+    icon: "📈",
+    title: "Konten Analisis",
+    description:
+      "Area ini menampilkan grafik dan tabel sesuai tab yang dipilih. Ganti tab di atas untuk berpindah antar jenis analisis.",
+    target: "tab-content",
+    position: "top",
+  },
+];
+
 // ─── Sync ke GuideContext via window bridge ────────────────────────────
 function syncContext(open: boolean) {
   if (typeof window !== "undefined" && (window as any).__setGuideOpen) {
